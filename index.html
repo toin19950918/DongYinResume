@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>DongYin's Resume</title>
+
+    <link rel="stylesheet" href="reset.css">
+
+    <style>
+       
+        body{
+            /* padding: 10px; */
+            font-family: 標楷體;
+            
+        }
+
+        .container{
+            width: 960px;
+            text-align: center;
+            margin: auto;
+            width: 60%;
+        }
+
+        h1{
+            font-size: 50px;
+            font-weight: bold;
+            margin: 20px 0px;
+        }
+        h2{
+            font-size: 30px;
+            text-align: left;
+            margin: 20px 0;
+        }
+
+        p{
+            font-size: 20px;
+            line-height: 1.5;
+        }
+
+        .icon{       
+            width: 60px;
+            height: 60px;
+            margin: 10px;
+       
+        }
+        .intro_block{
+            display: flex;     
+        }
+        
+        .intro_block p{
+            align-self: center;
+        }
+        
+        .divider{
+            width: 100%;
+            height: 5px;
+            margin: 20px 0;
+            
+        }
+        .projects_wrap{
+            display: flex;
+            align-items: center;
+        }
+
+        .butterfly img{
+            width: 100%;
+        }
+
+        .item img{
+            width: 90%;
+        }
+
+        .item{
+            margin: 20px 0;
+        }
+      
+    
+    </style>
+
+</head>
+<body>
+    
+    <div class="container">
+
+        <img src="pic/profile.png" alt="profile">
+        <h1>楊東穎(Brandon Yang)</h1>       
+        <div class="intro_block">
+            <img src="pic/school.png" class="icon" alt="學校：">
+            <p>
+                臺灣大學機械工程研究所就讀中/清華大學動力機械工程學系/師大附中
+            </p>
+        </div>
+        <div class="intro_block">
+            <img src="pic/phone.png" class="icon" alt="信箱：">
+            <p>0989127216</p>          
+            <img src="pic/email.png" class="icon" alt="電話：">
+            <p>toin0918@gmail.com</p> 
+        </div>
+
+        <img src="pic/black_line.png" class="divider" alt="">
+        <img src="pic/ability.JPG" alt="" width="100%" >
+        <img src="pic/black_line.png" class="divider" alt="">        
+
+        <h1>專案成果</h1>
+        <h2>蝴蝶飛行研究[Fluent、C]</h2>
+        <div class="projects_wrap">   
+            <div class="butterfly">        
+                <img src="gif/vortex.gif" alt=""> 
+            </div>
+            <div class="butterfly">        
+                <img src="gif/flying.gif" alt="">
+                <p>
+                    利用高速攝影拍攝蝴蝶飛行動態，並使用ANSYS Fluent進行仿真模擬，探討不同翅膀外型如何影響空氣動力，藉此優化微飛行器之效率。(碩士研究專題)
+                </p>
+          
+            </div>
+        </div>
+        
+      
+        <h2>機電整合控制程式[C]</h2>    
+        <div class="item">
+            <img src="gif/icnc.gif" alt="">
+            <p>導入CNC控制人機介面，以狀態機模擬與操控三軸晶圓取放機(模擬包含速度規劃與連桿運動)。</p>
+        </div>
+        
+
+        <h2>機械手臂誤差可視化[C#]</h2>      
+        <div class="item">
+            <img src="gif/error.gif" alt="">
+            <p>利用六軸動作感測機構(MMD)量測機械手臂運動軌跡，計算機構誤差，並搭配openTK作圖，將誤差可視化(圖中的圓錐代表假想刀具，若無誤差則會保持在原點，其會跟隨誤差值而移動，右圖則為刀具進給規劃路徑，可以透過鍵盤轉換視角)。</p>
+        </div>
+        
+
+        <h2>3D版踩地雷遊戲[Unity]</h2>   
+        <div class="item">
+            <img src="gif/bomb.gif" alt="">
+            <p>全新打造3D版踩地雷，透過人物移動去找出所有地雷，木棧板的功用為辨識出地雷位置，當找完所有地雷則贏得勝利，若不甚踩到地雷則會爆炸。</p>
+        </div>
+    
+
+        <h2>吊車打保齡球[Unity]</h2>      
+        <div class="item">
+            <img src="gif/crane.gif" alt="">
+            <p>使用吊車吊起軌道旁的球，以人偶為球瓶，當球將人偶撞倒時，會給予評分。</p>
+        </div>
+
+        <h2>停車遊戲[Unity]</h2>  
+        <div class="item">          
+            <img src="gif/parking.gif" alt="">
+            <p>必須精準地停至停車格內，評分標準包含:位置、角度、是否撞到、使用時間等。</p>
+        </div>
+      
+  
+        <!-- <h2>關於我:</h2>
+        <p>  
+            我是楊東穎，24歲，台北人，個性樂觀開朗，樂於學習新事物，喜歡健身與打籃球。
+        </p>
+
+        <h2>大學成績:</h2>
+        <p> 平均GPA 3.84，分別在大二、大三拿過兩次書卷獎，並於大三至北京清華大學交換。</p>
+       
+        <h2>學經歷:</h2>
+        <p>參加過清大賽車工廠(打造學生方程式賽車，並參加2018日本賽事)、藍天服務性社團(服務弱勢團體)、系際籃球隊與附中山校友會，也多次帶領工研院兒童科技學習營(服務弱勢兒童)，曾參與上銀第十屆智慧機器手臂實作競賽及ATCC全國大專院校商業個案大賽(國泰金控組)。
+            在清大動力機械工程學系以控制組畢業，同時修習熱流組必、選修。
+        </p>
+        <p>碩士研究主題為蝴蝶飛行，領域包含數值模擬(CFD)、微粒子影像測速(PIV)，主要目標是優化微飛行器(MAV)之氣動效率，曾參與東元國際創意競賽並獲得佳作。
+        在求學期間，喜歡累積實作經驗，曾經修習資料結構(C)、演算法(python)、機電整合程式設計(C)、互動式電腦繪圖(Unity)、機器人學(C、python)、人機介面與設計(swift)、物件導向設計與模擬(Java)、數值分析(python)等，希望在未來能夠更加精進實力並在職場上有所發揮。 
+        </p> -->
+        
+    </div>
+            
+</body>
+</html>
